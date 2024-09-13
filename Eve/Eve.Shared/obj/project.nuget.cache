@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WBgf8bS3Tx6ymwCrtT94cMfixuTuWtPXK7c6eoUVcW+srbKHwYCVO4tCs0UTHSZ/eHE+1ti8owf+lfvqQ48Bzg==",
+  "success": true,
+  "projectFilePath": "C:\\Practice\\Eve\\Eve\\Eve.Shared\\Eve.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\miguel.gamboa\\.nuget\\packages\\autofac\\8.1.0\\autofac.8.1.0.nupkg.sha512",
+    "C:\\Users\\miguel.gamboa\\.nuget\\packages\\autofac.extensions.dependencyinjection\\10.0.0\\autofac.extensions.dependencyinjection.10.0.0.nupkg.sha512",
+    "C:\\Users\\miguel.gamboa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\miguel.gamboa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.1\\system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
