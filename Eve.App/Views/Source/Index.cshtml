@@ -1,0 +1,94 @@
+﻿@using Eve.Shared.Utils
+@model System.Collections.Generic.List<Eve.Core.Models.Entities.Source>
+
+@{
+    ViewData["title"] = "Eve - Recursos";
+}
+
+<style>
+    .main-source-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .source-body {
+        width: 80%;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-gap: 24px;
+        height: 80%;
+    }
+
+    .source-body section:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #7B2CBF;
+        padding: 0 12px 12px 12px;
+    }
+
+    .source-body section:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 500px;
+        overflow-y: auto;
+        gap: 12px;
+    }
+
+    .btn-add {
+        padding: 8px 8px;
+        color: #009c9f;
+        background-color: #174259;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s all ease;
+        text-decoration: none
+    }
+
+    .btn-add:hover {
+        background-color: #006466;
+    }
+
+    .source-item {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #7B2CBF;
+        padding: 8px;
+    }
+</style>
+
+<div class="main-source-container">
+    <aside class="source-body">
+        <section>
+            <h2>Recursos</h2>
+            <a asp-action="Create" asp-controller="Source" class="btn-add">Agregar</a>
+        </section>
+        <section>
+            @if (Model.Count > 0)
+            {
+                foreach (var i in Model)
+                {
+                    <div class="source-item">
+                        <h4>@i.Name (@i.Categories.First().Name)</h4>
+                        <a href="@Url.Action("Edit", "Source", new { id = i.SourceId })" class="btn-add">Editar</a>
+                    </div>
+                }
+            }
+            else
+            {
+                <div>
+                    <h3>No se regitraron recursos</h3>
+                </div>
+            }
+        </section>
+    </aside>
+</div>

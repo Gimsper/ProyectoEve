@@ -1,0 +1,14 @@
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\bin\Debug\net8.0\Eve.Shared.deps.json
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\bin\Debug\net8.0\Eve.Shared.dll
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\bin\Debug\net8.0\Eve.Shared.pdb
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.AssemblyInfoInputs.cache
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.AssemblyInfo.cs
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.csproj.CoreCompileInputs.cache
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.sourcelink.json
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.dll
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\refint\Eve.Shared.dll
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.pdb
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\ref\Eve.Shared.dll
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\bin\Debug\net8.0\Eve.Shared.runtimeconfig.json
+C:\Repos\Gimsper\StreamingEve\Eve.Shared\obj\Debug\net8.0\Eve.Shared.genruntimeconfig.cache

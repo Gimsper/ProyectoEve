@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Eve.App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Eve.App.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+        for details on configuring this project to bundle and minify static web assets. */
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer {
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 60px;
+        }
+
+    </style>
+    @RenderBody()
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Eve - Enigma Team
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

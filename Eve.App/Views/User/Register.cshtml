@@ -1,0 +1,139 @@
+﻿@model Eve.Core.Models.Entities.RegisterViewModel
+
+@{
+    Layout = "_LayoutNoHeader";
+    ViewData["title"] = "Register";
+}
+
+<style>
+    .main-register-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    #FormRegister {
+        width: 100%;
+        height: 100%;
+    }
+
+    .register-modal {
+        box-sizing: border-box;
+        width: 400px;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-gap: 12px;
+        border: 1px solid #7B2CBF;
+        border-radius: 8px;
+        box-shadow: #7B2CBF 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    .register-body {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    .register-body section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .register-body section {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .register-body section input {
+        padding: 8px;
+        color: #E0AAFF;
+        background-color: #240046;
+        border: none;
+        border-radius: 6px;
+        outline-color: #7B2CBF;
+        height: 40px;
+    }
+
+    .register-body label:first-child {
+        font-weight: 600;
+    }
+
+    .register-footer {
+        width: 80%;
+        display: grid;
+        place-content: center;
+        grid-gap: 8px;
+    }
+
+    .register-footer button {
+        width: 240px;
+        height: 40px;
+        background-color: #3C096C;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s all ease;
+        color: #E0AAFF;
+        font-weight: 600;
+    }
+
+    .register-footer button:hover {
+        background-color: #5A189A;
+    }
+
+    .register-footer a {
+        text-align: center;
+        color: #5A189A;
+    }
+
+    .register-footer a:hover {
+        color: #E0AAFF;
+    }
+</style>
+
+<div class="main-register-container">
+    @using (Html.BeginForm("Register", "User", FormMethod.Post, new { id = "FormRegister" }))
+    {
+        <div class="register-modal">
+            <div>
+                <h3>Registrarse</h3>
+            </div>
+            <div class="register-body">
+                <section>
+                    @Html.LabelFor(e => e.Username)
+                    @Html.EditorFor(e => e.Username)
+                    @Html.ValidationMessageFor(e => e.Username)
+                </section>
+                <section>
+                    @Html.LabelFor(e => e.Email)
+                    @Html.EditorFor(e => e.Email)
+                    @Html.ValidationMessageFor(e => e.Email)
+                </section>
+                <section>
+                    @Html.LabelFor(e => e.Password)
+                    @Html.EditorFor(e => e.Password)
+                    @Html.ValidationMessageFor(e => e.Password)
+                </section>
+                <section>
+                    @Html.LabelFor(e => e.ConfirmPassword)
+                    @Html.EditorFor(e => e.ConfirmPassword)
+                    @Html.ValidationMessageFor(e => e.ConfirmPassword)
+                </section>
+            </div>
+            <div class="register-footer">
+                <button>Registrar</button>
+                <a asp-action="Login" asp-controller="User">Cancelar</a>
+            </div>
+        </div>
+    }
+</div>

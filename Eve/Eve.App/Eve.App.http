@@ -1,6 +1,0 @@
-@Eve.App_HostAddress = http://localhost:5143
-
-GET {{Eve.App_HostAddress}}/swagger/
-Accept: application/json
-
-###
